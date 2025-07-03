@@ -1,4 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://bsywgjg177p18"]
+[gd_scene load_steps=7 format=3 uid="uid://bsywgjg177p18"]
+
+[ext_resource type="Texture2D" uid="uid://bk577ufi4rswc" path="res://1528106245788.jpg" id="1_jgwwa"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_k150d"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -39,3 +41,7 @@ shape = SubResource("ConcavePolygonShape3D_jgwwa")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D"]
 size = Vector3(20, 1, 20)
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.66677, 1.17182)
+texture = ExtResource("1_jgwwa")
